@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Prerequisites &mdash; Elements SDK 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Application" href="developer.html" />
+    <link rel="prev" title="Welcome to Elements SDK" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Elements SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Basic Information</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vivado">Vivado</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#definitions">Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#application">Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#soc">SOC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#board">Board</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#flows">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#compile-zephyr">Compile (Zephyr)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-zibal">Generate (Zibal)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation">Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#synthesize">Synthesize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flash">Flash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#debug">Debug</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#docker">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html#system-on-chip">System on Chip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html#boards">Boards</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="platforms.html">Hydrogen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platforms.html#carbon">Carbon</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Elements SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Prerequisites</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/basics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="prerequisites">
+<h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Linux host system (Ubuntu 20.04 recommended)</p></li>
+<li><p>Python 3 (python3.8-dev)</p></li>
+<li><p>Vivado for Xilinx platforms (optional)</p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p>Install required packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">ssh</span> <span class="n">git</span> <span class="n">libtool</span><span class="o">-</span><span class="nb">bin</span> <span class="n">autotools</span><span class="o">-</span><span class="n">dev</span> <span class="n">automake</span> <span class="n">pkg</span><span class="o">-</span><span class="n">config</span> <span class="n">libyaml</span><span class="o">-</span><span class="n">dev</span> <span class="n">cmake</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span> <span class="n">python3</span><span class="o">.</span><span class="mi">8</span><span class="o">-</span><span class="n">dev</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="n">virtualenv</span> <span class="n">gdb</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">iverilog</span> <span class="n">gtkwave</span> <span class="n">libcanberra</span><span class="o">-</span><span class="n">gtk</span><span class="o">-</span><span class="n">module</span> <span class="n">libcanberra</span><span class="o">-</span><span class="n">gtk3</span><span class="o">-</span><span class="n">module</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">libtinfo5</span> <span class="n">libncurses5</span>
+</pre></div>
+</div>
+</li>
+<li><p>Download the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">phytec</span><span class="o">-</span><span class="n">labs</span><span class="o">/</span><span class="n">elements</span><span class="o">-</span><span class="n">sdk</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">elements</span><span class="o">-</span><span class="n">sdk</span><span class="o">/</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virtualenv</span> <span class="o">-</span><span class="n">p</span> <span class="n">python3</span> <span class="n">venv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Initialise the SDK:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">elements</span><span class="o">.</span><span class="n">py</span> <span class="n">init</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="section" id="vivado">
+<h2>Vivado<a class="headerlink" href="#vivado" title="Permalink to this headline">¶</a></h2>
+<p>The Vivado toolchain is not part of this SDK and needs to be installed separately for Xilinx
+platforms from <a class="reference external" href="https://www.xilinx.com/support/download.html">Xilinx’s homepage</a>. Download the Linux Self Extracting Web Installer for Version
+2019.2 and install it. Ignore the warnings about the Not Supported Linux OS and do not install the
+latest version. You can use the Vivado HL WebPACK license for free if you do not sell the bitsream
+and disable everything except the Artix-7 Platform to save disk storage. Elements excepts to find
+the Vivado toolchain under <code class="docutils literal notranslate"><span class="pre">/opt/xilinx</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>chmod +x ~/Downloads/Xilinx_Unified_2019.2_1106_2127_Lin64.bin
+~/Downloads/Xilinx_Unified_2019.2_1106_2127_Lin64.bin
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="definitions">
+<h1>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h1>
+<p>This section shortly describes some definitions for clarification in the further documentation.</p>
+<div class="section" id="application">
+<h2>Application<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h2>
+<p>An application is the user-level software. It’s build in the firmware and will be started by
+Zephyr. Custom applications for boards will be added as application during the Zephyr compile
+process.</p>
+</div>
+<div class="section" id="soc">
+<h2>SOC<a class="headerlink" href="#soc" title="Permalink to this headline">¶</a></h2>
+<p>A System on Chip (SOC) is the Microcontroller design. On FPGA based SOCs, the application is
+added to the memory and deployed alongside the Verilog files.</p>
+</div>
+<div class="section" id="board">
+<h2>Board<a class="headerlink" href="#board" title="Permalink to this headline">¶</a></h2>
+<p>A Board is a SOC with a specific pin-out. While the SOC only defines the in- and output-pins, a
+boards maps these to physical IOs of a package.</p>
+</div>
+</div>
+<div class="section" id="flows">
+<h1>Flows<a class="headerlink" href="#flows" title="Permalink to this headline">¶</a></h1>
+<p>The SDK has some stages to generate a MCU and its firmware from sources. This section describes each stage and the flow between them.</p>
+<a class="reference internal image-reference" href="_images/elements_flow.png"><img alt="_images/elements_flow.png" src="_images/elements_flow.png" style="width: 600px;" /></a>
+<p>Entry point for this flow is Zephyr. The compiled output will be stored in a build directoy and can
+immediately used by GDB. The Zephyr output is a dependency for FPGA based designs and need to be
+compiled before. The next stage generates the MCU files for the specific SOC and places these again
+in the build storage. A simulator can than be used to run the design on the local machine without
+any hardware. The last stage is the synthesizing of the design files into the specific hardware
+architecture. The synthesized design can be simulated again or flashed to the hardware.</p>
+</div>
+<div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>The SDK flow can be used with the <code class="docutils literal notranslate"><span class="pre">elements.py</span></code> tool. The next chapters explain each stage of
+the flow. However, the help text can also support with the built-in commands.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py -h
+</pre></div>
+</div>
+<div class="section" id="compile-zephyr">
+<h2>Compile (Zephyr)<a class="headerlink" href="#compile-zephyr" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">compile</span></code> command compiles an application for a board. Both values must be passed as
+mandatory argument. An optional flag <code class="docutils literal notranslate"><span class="pre">-f</span></code> can force to not use the build cache and compile
+entirely new.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py compile &lt;board&gt; &lt;application&gt; [-f]
+</pre></div>
+</div>
+<p>Example to compile the LED demo for DH-006:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py compile DH-006 zephyr-samples/demo/leds
+</pre></div>
+</div>
+</div>
+<div class="section" id="generate-zibal">
+<h2>Generate (Zibal)<a class="headerlink" href="#generate-zibal" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">generate</span></code> command can build various different SOC designs. It only takes the name of the
+SOC as parameter.</p>
+<p>Hint: FPGA based SOC designs will add the compiled Zephyr output into the memory.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py generate &lt;soc&gt;
+</pre></div>
+</div>
+<p>Example to build the Hydrogen-1 SOC:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py generate Hydrogen1
+</pre></div>
+</div>
+</div>
+<div class="section" id="simulation">
+<h2>Simulation<a class="headerlink" href="#simulation" title="Permalink to this headline">¶</a></h2>
+<p>Since a board is always built on a specific SOC design, simulations can be done on board-level.
+The <code class="docutils literal notranslate"><span class="pre">simulate</span></code> command takes as parameter the name of the board. The toolchain can be passed with
+the optional parameter <code class="docutils literal notranslate"><span class="pre">--toolchain</span></code>. The Xilinx toolchain is selected by default. A further
+flag <code class="docutils literal notranslate"><span class="pre">-synthesized</span></code> can be used to simulate a synthesized design. This flag is currently only
+available for the Xilinx toolchain.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py simulate &lt;board&gt; [--toolchain &lt;xilinx/oss&gt;] [-synthesized]
+</pre></div>
+</div>
+<p>Example to simulate DH-006:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py simulate DH-006
+</pre></div>
+</div>
+</div>
+<div class="section" id="synthesize">
+<h2>Synthesize<a class="headerlink" href="#synthesize" title="Permalink to this headline">¶</a></h2>
+<p>The synthesize is similiar to the simulation. It can synthesize a SOC design on board-level.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py synthesize &lt;board&gt; [--toolchain &lt;xilinx&gt;]
+</pre></div>
+</div>
+<p>Example to simulate DH-006:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py synthesize DH-006
+</pre></div>
+</div>
+</div>
+<div class="section" id="flash">
+<h2>Flash<a class="headerlink" href="#flash" title="Permalink to this headline">¶</a></h2>
+<p>This command flashes a bitsream directly into a FPGA or permantly into a SPI NOR. Alternatively,
+it can also flash a firmware into the memory of the MCU. The FPGA destination is set by default.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py flash &lt;board&gt; [--destination &lt;fpga/spi/memory&gt;]
+</pre></div>
+</div>
+<p>Example to flash the FPGA:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py flash DH-006
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug">
+<h2>Debug<a class="headerlink" href="#debug" title="Permalink to this headline">¶</a></h2>
+<p>The debug command supports debugging the firmware. It flashes a new firmware and opens a debugger
+(GDB) before starting at start address.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py debug
+</pre></div>
+</div>
+<p>Example to flash the firmware into the memory and start at the start address:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./elements.py debug
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="docker">
+<h1>Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h1>
+<p>A Dockerfile is provided for systems which do not run with the recommended versions. The Docker
+will have included all required packages for the SDK.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo docker build -t elements-sdk:1.0 .
+sudo docker run elements-sdk:1.0 ./elements.py compile DH-006 zephyr-samples/demo/leds
+</pre></div>
+</div>
+<p>Hint: Only <code class="docutils literal notranslate"><span class="pre">compile</span></code> and <code class="docutils literal notranslate"><span class="pre">generate</span></code> are currently supported.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="developer.html" class="btn btn-neutral float-right" title="Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Elements SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, PHYTEC Messtechnik GmbH
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
